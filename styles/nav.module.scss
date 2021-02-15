@@ -1,18 +1,23 @@
 .nav {
   display: flex;
-  width: 98vw;
-  position: absolute;
-  top: 0;
-  height: 10vh;
+  width: 100%;
   margin: 0px 0px;
   font-family: Roboto;
-  padding: 0px 20px;
-  justify-content: space-around;
+  padding: 0px 0px;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
 }
 .header {
-    background-color: chocolate;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), transparent);
   display: flex;
-  justify-content: space-evenly;
+  width: 90%;
+  padding-top: 20px;
+  justify-content: space-between;
 }
 .brand {
   margin: 16px;
@@ -20,8 +25,7 @@
 }
 
 .brand img {
-  width: 120px;
-  height: 34.08px;
+  width: 92px;
 }
 .menu {
   list-style: none;
@@ -29,23 +33,23 @@
   margin: 0;
 }
 .link {
-  padding: 20px;
+  padding: 19px;
   font-weight: 500;
   font-size: 16px;
   margin: 0;
   font-family: Roboto;
+  color: white;
 }
 .btn {
-
-  color: black;
+  color: white;
 }
 .btn:hover {
   font-size: 100%;
   cursor: pointer;
-  background-color:rgb(22, 59, 90);
+  background-color: rgb(22, 59, 90);
 }
 .side {
-display: flex;
+  display: flex;
   padding: 20px;
 }
 .side a {
@@ -53,9 +57,9 @@ display: flex;
   font-size: 16px;
 }
 .search {
- color: black;background-color: black;
- padding-right: 10px;
+  color: black;
+  padding-right: 10px;
 }
 //  @media only screen and (max-width: 600px){
-  
+
 //  }

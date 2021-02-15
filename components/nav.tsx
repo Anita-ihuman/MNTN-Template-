@@ -10,17 +10,20 @@ const Navbar = () => {
             <img src="/Logo.png" alt="Logo" color="black" />
           </div>
 
-          <ul className={styles.menu}>
-            <li className={styles.link}>
-              <a href="/">Equipment</a>
-            </li>
-            <li className={styles.link}>
-              <a href="/">About us</a>
-            </li>
-            <li className={styles.link}>
-              <a href="/">Blog</a>
-            </li>
-          </ul>
+          
+          <div>
+            <ul className={styles.menu}>
+              <li className={styles.link}>
+                <a href="/">Equipment</a>
+              </li>
+              <li className={styles.link}>
+                <a href="/">About us</a>
+              </li>
+              <li className={styles.link}>
+                <a href="/">Blog</a>
+              </li>
+            </ul>
+          </div>
 
           <div className={styles.side}>
             <a href="/">
