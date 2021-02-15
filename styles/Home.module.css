@@ -2,7 +2,7 @@
   width: 100%;
   height: 100vh;
   position: relative;
-  overflow: hidden;
+overflow: auto;
 }
 .header:after {
   content: "";
@@ -19,15 +19,15 @@
   bottom: -100px;
   width: 1300px;
   right: 0px;
-  bottom: -50px;
+  bottom: -60px;
   z-index: 30;
 }
 .topshade {
   position: absolute;
   bottom: 0px;
-  width: 1900px;
+  width: 1400px;
   right: 0px;
-  bottom: -400px;
+  bottom: -100px;
   z-index: 40;
 }
 .mountain {
@@ -35,7 +35,7 @@
   bottom: 0px;
   width: 1300px;
   right: 0px;
-  top: 310px;
+  top: 323px;
   bottom: -100px;
   z-index: 30;
 }
@@ -44,7 +44,7 @@
   bottom: 0px;
   width: 1300px;
   right: 0;
-  top: 530px;
+  top: 545px;
   bottom: 0px;
   z-index: 40;
   overflow: hidden;
@@ -52,11 +52,10 @@
 }
 .shade {
   position: absolute;
-  width: 1500px;
+  width: 1400px;
   right: 0;
-  top: 505px;
-
-  height: 500px;
+  top: 855px;
+  height: 450px;
   z-index: 100;
 }
 .Header_title {
@@ -64,17 +63,43 @@
   display: flex;
   z-index: 50;
   line-height: 4rem;
-  top: 160px;
+  top: 180px;
   justify-content: center;
   width: 100%;
   text-align: center;
   color: white;
   justify-content: space-around;
 }
+.Header_text{
+  margin: 0px 160px;
+}
 .Header_social {
+font-size: 0.7rem;
+padding-top: 30px;
+
+}
+.Header_social p{
+    transform: rotate(90deg);
+}
+.Header_social img{
+  width: 15px;
 }
 .Header_top {
   display: flex;
+  font-size: 0.9rem;
+}
+.Header_top p{
+  font-family: Gilroy;
+font-style: normal;
+font-weight: 800;
+font-size: 0.8rem;
+letter-spacing: 6px;
+text-transform: uppercase;
+color: #FBD784;
+}
+.Header_line{
+  margin-top:10px;
+padding-right:20px ;
 }
 .Header_top_bold {
   text-transform: capitalize;
@@ -88,6 +113,37 @@
   text-align: left;
   flex-grow: 0;
   margin: 0px 0px;
+}
+.Header_bottom{
+  display: flex;
+}
+.Header_span{
+  font-size: 0.7rem;
+  margin: 0px;
+
+}
+.Header_bottom img{
+  width: -10px;
+  height: 20px;
+  padding-left: 10px;
+}
+.Header_measure{
+padding-top: 30px;
+
+}
+.Header_meter{
+  width: 31px;
+  margin-right: 20px;
+}
+.Header_ruler{
+    width: 2.1px;
+    margin-top: 0px;
+}
+.Header_rulerthick{
+  position: absolute;
+  top: 29px;
+  right: 45px;
+      width: 2.1px;
 }
 @media (max-width: 600px) {
   .grid {

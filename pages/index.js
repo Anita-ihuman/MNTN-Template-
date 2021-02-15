@@ -7,12 +7,17 @@ export default function Home() {
       <div className={styles.Header_title}>
         <div className={styles.Header_social}>
           <p>Follow</p>
-          <img src="Vector (1).png" alt="" />
-          <img src="twitter.png" alt="" />
+          <div>
+            <img src="Vector (1).png" alt="" />
+          </div>
+
+          <div>
+            <img src="twitter.png" alt="" />
+          </div>
         </div>
         <div className={styles.Header_text}>
           <div className={styles.Header_top}>
-            <div>
+            <div className={styles.Header_line}>
               <img src="Rectangle 2.1.png" alt="" />
             </div>
             <div>
@@ -23,14 +28,20 @@ export default function Home() {
             Be prepared for the Mountains and beyond!
           </h1>
           <div className={styles.Header_bottom}>
-            <span>scroll down</span>
-            <img src="arrow_downward.png" alt="" />
+            <span className={styles.Header_span}>scroll down</span>
+            <div>
+              <img src="arrow_downward.png" alt="" />
+            </div>
           </div>
         </div>
         <div className={styles.Header_measure}>
-          <img src="Text.png" alt="" />
-          <img src="slider BG.png" alt="" />
-          <img src="slider Indicator.png" alt="" />
+          <img src="Text.png" alt="" className={styles.Header_meter} />
+          <img src="slider BG.png" alt="" className={styles.Header_ruler} />
+          <img
+            src="slider Indicator.png"
+            className={styles.Header_rulerthick}
+            alt=""
+          />
         </div>
       </div>
 
