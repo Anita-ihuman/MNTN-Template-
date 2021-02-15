@@ -1,0 +1,61 @@
+.nav {
+  display: flex;
+  width: 98vw;
+  position: absolute;
+  top: 0;
+  height: 10vh;
+  margin: 0px 0px;
+  font-family: Roboto;
+  padding: 0px 20px;
+  justify-content: space-around;
+}
+.header {
+    background-color: chocolate;
+  display: flex;
+  justify-content: space-evenly;
+}
+.brand {
+  margin: 16px;
+  cursor: pointer;
+}
+
+.brand img {
+  width: 120px;
+  height: 34.08px;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+.link {
+  padding: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+  font-family: Roboto;
+}
+.btn {
+
+  color: black;
+}
+.btn:hover {
+  font-size: 100%;
+  cursor: pointer;
+  background-color:rgb(22, 59, 90);
+}
+.side {
+display: flex;
+  padding: 20px;
+}
+.side a {
+  font-weight: 500;
+  font-size: 16px;
+}
+.search {
+ color: black;background-color: black;
+ padding-right: 10px;
+}
+//  @media only screen and (max-width: 600px){
+  
+//  }
