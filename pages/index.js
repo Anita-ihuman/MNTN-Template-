@@ -7,23 +7,30 @@ export default function Home() {
       <div className={styles.Header_title}>
         <div className={styles.Header_social}>
           <p>Follow</p>
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <img src="Vector (1).png" alt="" />
+          <img src="twitter.png" alt="" />
         </div>
         <div className={styles.Header_text}>
           <div className={styles.Header_top}>
-            <img src="" alt="" />
-            <p>A Hiking guide</p>
+            <div>
+              <img src="Rectangle 2.1.png" alt="" />
+            </div>
+            <div>
+              <p>A Hiking guide</p>
+            </div>
           </div>
-          <h1>Be prepared for the Mountains and beyond!</h1>
+          <h1 className={styles.Header_top_bold}>
+            Be prepared for the Mountains and beyond!
+          </h1>
           <div className={styles.Header_bottom}>
             <span>scroll down</span>
-            <img src="" alt="" />
+            <img src="arrow_downward.png" alt="" />
           </div>
         </div>
         <div className={styles.Header_measure}>
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <img src="Text.png" alt="" />
+          <img src="slider BG.png" alt="" />
+          <img src="slider Indicator.png" alt="" />
         </div>
       </div>
 
@@ -31,7 +38,7 @@ export default function Home() {
       <img src="HG.png" className={styles.sky} alt="" />
       <img src="MG.png" className={styles.mountain} alt="" />
       <img src="VG.png" className={styles.person} alt="" />
-      <img src="BG Content" className={styles.shade} alt="" />
+      <img src="BG Content.png" className={styles.shade} alt="" />
     </div>
   );
 }

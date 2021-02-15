@@ -1,57 +1,33 @@
-
 .Third {
   color: black;
   display: flex;
   padding: 0px 50px;
   border-top: 1px solid#9A7DFF;
+  width: 100%;
 }
 .text {
   justify-content: space-evenly;
   margin: 50px;
 }
 .text p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 22px;
 }
-.second img {
-  object-fit: cover;
-  margin-bottom: 60px;
-  width: 183.5px;
-  height: 37px;
-  top: 5389px;
-  left: 815px;
-}
+
 .text h3 {
   font-weight: bold;
   font-size: 14px;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
 }
 .first {
   display: flex;
 }
-.inner {
-  margin-top: 65px;
-  margin: 50px;
-  display: flex;
-  padding-bottom: 140px;
-  color: black;
-}
-.inner img {
-  width: 41px;
-  object-fit: cover;
-  height: 41px;
-  margin-right: 20px;
-}
-.bottom {
-  display: flex;
-  justify-content: space-around;
-  background-color: white;
-  padding: 0px 30px;
-}
+
+
 .copy {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -59,4 +35,5 @@
   margin-top: 35px;
   color: #272d4e;
 
-  text-align: center;}
+  text-align: center;
+}
