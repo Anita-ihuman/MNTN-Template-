@@ -1,39 +1,52 @@
 .Third {
-  color: black;
+  color: white;
   display: flex;
-  padding: 0px 50px;
-  border-top: 1px solid#9A7DFF;
+  padding: 40px 0px;
   width: 100%;
+  justify-content: space-around;
+  background: #10222a;
 }
-.text {
+
+.text2 {
+  display: flex;
   justify-content: space-evenly;
-  margin: 50px;
+  font-family: Gilroy;
+  font-style: normal;
+}
+.text1 {
+  margin-left: 100px;
+  color: white;
+  font-family: Gilroy;
 }
 .text p {
-  font-family: "Roboto", sans-serif;
+  font-family: Gilroy;
   font-weight: normal;
   font-size: 12px;
   line-height: 22px;
+  width: 170px;
+}
+.textimg {
+  width: 70px;
 }
 
 .text h3 {
   font-weight: bold;
   font-size: 14px;
-  font-family: "Varela Round", sans-serif;
+  font-family: Gilroy;
+  color: #fbd784;
 }
 .first {
   display: flex;
 }
 
-
 .copy {
-  font-family: "Roboto", sans-serif;
+  font-family: Gilroy;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 22px;
-  margin-top: 35px;
-  color: #272d4e;
-
+  text-align: center;
+  color: #555555;
+  margin-top: 110px;
   text-align: center;
 }
