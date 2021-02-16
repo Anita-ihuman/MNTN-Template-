@@ -25,11 +25,26 @@
   line-height: 22px;
   width: 170px;
 }
+.text1 p {
+  font-family: Gilroy;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+}
+.text {
+}
 .textimg {
   width: 70px;
+  padding-top: 10px;
 }
 
 .text h3 {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Gilroy;
+  color: #fbd784;
+}
+.text1 h3 {
   font-weight: bold;
   font-size: 14px;
   font-family: Gilroy;
@@ -47,6 +62,6 @@
   line-height: 22px;
   text-align: center;
   color: #555555;
-  margin-top: 110px;
+  margin-top: 100px;
   text-align: center;
 }

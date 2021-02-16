@@ -28,7 +28,7 @@ const Footer = () => {
               <p>Privacy Policy</p>
             </div>
 
-            <div className={styles.text1 }>
+            <div className={styles.text1}>
               <h3>More on MNTN</h3>
               <p>The Team </p>
               <p>Jobs </p>
