@@ -1,8 +1,10 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import { Element } from '../pages/main'
 
 export default function Home() {
   return (
+    <>
     <div className={styles.Header}>
       <div className={styles.Header_title}>
         <div className={styles.Header_social}>
@@ -50,6 +52,14 @@ export default function Home() {
       <img src="MG.png" className={styles.mountain} alt="" />
       <img src="VG.png" className={styles.person} alt="" />
       <img src="BG Content.png" className={styles.shade} alt="" />
-    </div>
+      </div>
+    <Element
+        headtop="GET STARTED"
+        headbold="What level of  hiker are you?"
+        headtext="Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? "
+        headbottom="read more"
+      />
+  
+    </>
   );
 }

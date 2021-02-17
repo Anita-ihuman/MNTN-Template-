@@ -1,7 +1,19 @@
 import Head from "next/head";
 import styles from "../styles/main.module.scss";
 
-const Main = () => {
+export interface ElementProps {
+  headtop: string;
+  headbold: string;
+  headtext: string;
+  headbottom: string;
+}
+
+export function Element({
+  headtop,
+  headbold,
+  headtext,
+  headbottom,
+}: ElementProps) {
   return (
     <div className={styles.main}>
       <div className={styles.main_content}>
@@ -14,21 +26,12 @@ const Main = () => {
               <div className={styles.content_line}>
                 <img src="Rectangle 2.1.png" alt="" />
               </div>
-              <p className={styles.content_orange}>Get started</p>
+              <p className={styles.content_orange}>{headtop}</p>
             </div>
-            <h3 className={styles.content_bold}>
-              What level of hiker are you?
-            </h3>
-            <p>
-              Determining what level of hiker you are can be an important tool
-              when planning future hikes. This hiking level guide will help you
-              plan hikes according to different hike ratings set by various
-              websites like All Trails and Modern Hiker. What type of hiker are
-              you – novice, moderate, advanced moderate, expert, or expert
-              backpacker?
-            </p>
+            <h3 className={styles.content_bold}>{headbold}</h3>
+            <p>{headtext}</p>
             <div className={styles.content_bottom}>
-              <p>read more</p>
+              <p>{headbottom}</p>
               <img src="arrow_downward.png" />
             </div>
           </div>
@@ -39,5 +42,6 @@ const Main = () => {
       </div>
     </div>
   );
-};
-export default Main;
+}
+
+export default Element;
