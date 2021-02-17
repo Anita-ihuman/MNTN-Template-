@@ -1,14 +1,24 @@
 import Head from "next/head";
+import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 import { Element } from "../pages/main";
 
 export default function Home() {
+   const [offsetY, setOffsetY] = useState(0);
+   const handleScroll = () => setOffsetY(window.pageYOffset);
+   useEffect(() => {
+     window.addEventListener("scroll", handleScroll);
+     return () => window.removeEventListener("scroll", handleScroll);
+   }, []);
+
   return (
     <>
       <div className={styles.Header}>
         <div className={styles.Header_title}>
           <div className={styles.Header_social}>
-            <p>Follow</p>
+            <p className={styles.Header_socialte} href="/">
+              Follow
+            </p>
             <div>
               <img src="Vector (1).png" alt="" />
             </div>
@@ -37,21 +47,53 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.Header_measure}>
-            <img src="Text.png" alt="" className={styles.Header_meter} />
-            <img src="slider BG.png" alt="" className={styles.Header_ruler} />
+            <div>
+              <p>Start</p>
+              <ul className={styles.Header_meter}>
+                <li>01</li>
+                <li>02</li>
+                <li>03</li>
+              </ul>
+            </div>
             <img
               src="slider Indicator.png"
               className={styles.Header_rulerthick}
               alt=""
             />
+            <img src="slider BG.png" alt="" className={styles.Header_ruler} />
           </div>
         </div>
 
-        <img src="BG Hero.png" className={styles.topshade} alt="" />
-        <img src="HG.png" className={styles.sky} alt="" />
-        <img src="MG.png" className={styles.mountain} alt="" />
-        <img src="VG.png" className={styles.person} alt="" />
-        <img src="BG Content.png" className={styles.shade} alt="" />
+        <img
+          src="BG Hero.png"
+          className={styles.topshade}
+          alt=""
+          style={{ transform: `translateY(${offsetY * 0.2}px)` }}
+        />
+        <img
+          src="HG.png"
+          className={styles.sky}
+          alt=""
+          style={{ transform: `translateY(${offsetY * 1}px)` }}
+        />
+        <img
+          src="MG.png"
+          className={styles.mountain}
+          alt=""
+          style={{ transform: `translateY(${offsetY * 0.7}px)` }}
+        />
+        <img
+          src="VG.png"
+          className={styles.person}
+          alt=""
+          style={{ transform: `translateY(${offsetY * 0.2}px)` }}
+        />
+        <img
+          src="BG Content.png"
+          className={styles.shade}
+          alt=""
+          style={{ transform: `translateY(${offsetY * 0.2}px)` }}
+        />
       </div>
 
       <Element

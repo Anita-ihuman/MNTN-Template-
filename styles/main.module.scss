@@ -11,8 +11,8 @@ background-color: #0B1D26;
   width: 70%;
   justify-content: center;
   text-align: center;
-  margin: auto;
- 
+  margin:auto;
+ padding-bottom:  100px;
 }
 .content_text p {
   width: 85%;
@@ -25,15 +25,13 @@ background-color: #0B1D26;
   line-height: 30px;
 }
 
-.content_sideimg {
-}
 .main_content1 {
   padding: 0rem;
   display: grid;
   grid-template-columns: repeat(2, 3fr);
   text-align: center;
   justify-content: center;
-  margin: 50x auto;
+  margin:  auto;
 }
 .content_top {
   display: flex;

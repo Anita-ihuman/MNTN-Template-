@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useEffect, useState } from "react";
 import styles from "../styles/main.module.scss";
 
 export interface ElementProps {
@@ -7,7 +8,7 @@ export interface ElementProps {
   headtext: string;
   headbottom: string;
   left: boolean;
-image: string
+  image: string;
 }
 
 export function Element({
@@ -18,10 +19,14 @@ export function Element({
   left,
   image,
 }: ElementProps) {
+ 
   return (
     <main className={styles.main}>
       <section className={styles.main_content}>
-        <article className={styles.main_content1}>
+        <article
+          className={styles.main_content1}
+       
+        >
           {left && (
             <figure className={styles.content_sideimg}>
               <img src="01 (1).png" alt="" width="400px" />

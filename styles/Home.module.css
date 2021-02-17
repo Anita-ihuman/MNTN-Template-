@@ -78,8 +78,9 @@ font-size: 0.7rem;
 padding-top: 30px;
 
 }
-.Header_social p{
+.Header_socialte{
     transform: rotate(90deg);
+   
 }
 .Header_social img{
   width: 15px;
@@ -126,23 +127,35 @@ padding-right:20px ;
   width: -10px;
   height: 20px;
   padding-left: 10px;
+
 }
 .Header_measure{
 padding-top: 30px;
-
+display: flex;
+}
+.Header_measure p{
+  margin: 0;
+   height: 34px;
 }
 .Header_meter{
-  width: 31px;
-  margin-right: 20px;
+  padding-right: 20px;
+  list-style: none;
+   font-size: 0.7rem;
+   margin: 0;  
+  
+}
+.Header_meter li{
+   height: 40px;
 }
 .Header_ruler{
-    width: 2.1px;
-    margin-top: 0px;
+    width: 2px;
+    margin-top: 0px; 
+       height: 166px;
 }
 .Header_rulerthick{
   position: absolute;
-  top: 29px;
-  right: 45px;
+  top: 31px;
+  right: 42px;
       width: 2.1px;
 }
 @media (max-width: 600px) {
