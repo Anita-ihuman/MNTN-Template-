@@ -7,6 +7,7 @@ export interface ElementProps {
   headtext: string;
   headbottom: string;
   left: boolean;
+image: string
 }
 
 export function Element({
@@ -15,6 +16,7 @@ export function Element({
   headtext,
   headbottom,
   left,
+  image,
 }: ElementProps) {
   return (
     <main className={styles.main}>
@@ -22,7 +24,7 @@ export function Element({
         <article className={styles.main_content1}>
           {left && (
             <figure className={styles.content_sideimg}>
-              <img src="01.png" alt="" width="400px" />
+              <img src="01 (1).png" alt="" width="400px" />
             </figure>
           )}
           <div className={styles.content_text}>
@@ -44,7 +46,7 @@ export function Element({
           </div>
           {!left && (
             <figure className={styles.content_sideimg}>
-              <img src="01.png" alt="" width="400px" />
+              <img src={image} alt="" width="400px" />
             </figure>
           )}
         </article>
