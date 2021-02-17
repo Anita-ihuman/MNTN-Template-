@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import styles from "../styles/main.module.scss";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export interface ElementProps {
   headtop: string;
@@ -19,14 +21,15 @@ export function Element({
   left,
   image,
 }: ElementProps) {
- 
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
+
   return (
     <main className={styles.main}>
       <section className={styles.main_content}>
-        <article
-          className={styles.main_content1}
-       
-        >
+        <article data-aos="fade-left"className={styles.main_content1}>
           {left && (
             <figure className={styles.content_sideimg}>
               <img src="01 (1).png" alt="" width="400px" />
