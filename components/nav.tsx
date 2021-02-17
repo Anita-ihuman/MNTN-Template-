@@ -6,9 +6,9 @@ const Navbar = () => {
     <>
       <nav className={styles.nav}>
         <div className={styles.header}>
-          <div className={styles.brand}>
+          <figure className={styles.brand}>
             <img src="/Logo.png" alt="Logo" color="black" />
-          </div>
+          </figure>
 
           
           <div>

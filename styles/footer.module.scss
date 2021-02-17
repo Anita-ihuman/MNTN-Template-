@@ -1,10 +1,15 @@
+.footer {
+  width: 100%;
+    background: #10222a;
+}
+
 .Third {
   color: white;
   display: flex;
   padding: 40px 0px;
-  width: 100%;
-  justify-content: space-around;
-  background: #10222a;
+  width: 90%;
+  justify-content: space-evenly;
+margin: 0 auto;
 }
 
 .text2 {
@@ -12,11 +17,13 @@
   justify-content: space-evenly;
   font-family: Gilroy;
   font-style: normal;
+  margin-right: 90px;
 }
 .text1 {
   margin-left: 100px;
   color: white;
   font-family: Gilroy;
+ 
 }
 .text p {
   font-family: Gilroy;
@@ -25,13 +32,24 @@
   line-height: 22px;
   width: 170px;
 }
-.text1 p {
+.text ul {
+  font-family: Gilroy;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  list-style: none;
+  padding: 0;
+}
+.text1 ul {
+  padding: 0;
+  list-style: none;
   font-family: Gilroy;
   font-weight: normal;
   font-size: 12px;
   line-height: 22px;
 }
 .text {
+  margin-right: 150px;
 }
 .textimg {
   width: 70px;
@@ -66,12 +84,12 @@
   text-align: center;
 }
 @media (max-width: 600px) {
-  .third{
+  .third {
     flex-wrap: wrap;
-flex-direction: row;
-justify-content: center;
+    flex-direction: row;
+    justify-content: center;
   }
-  .text2{
+  .text2 {
     flex-wrap: wrap;
     flex-direction: row;
   }

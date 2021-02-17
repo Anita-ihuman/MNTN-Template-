@@ -4,9 +4,9 @@ import styles from "../styles/footer.module.scss";
 const Footer = () => {
   return (
     <>
-      <footer>
-        <div className={styles.Third}>
-          <div className={styles.text}>
+      <footer className={styles.footer}>
+        <section className={styles.Third}>
+          <article className={styles.text}>
             <div>
               <img src="Logo.png" className={styles.textimg} />
               <p>
@@ -17,25 +17,29 @@ const Footer = () => {
             <div className={styles.copy}>
               Copyright 2019 MNTN, Inc. Terms & Privacy
             </div>
-          </div>
-          <div className={styles.text2}>
-            <div className={styles.text}>
+          </article>
+          <article className={styles.text2}>
+            <div className={styles.text1}>
               <h3>More on The Blog</h3>
-              <p>About MNTN</p>
-              <p>Contributors & Writers</p>
-              <p>Write For Us</p>
-              <p>Contact Us</p>
-              <p>Privacy Policy</p>
+              <ul>
+                <li>About MNTN</li>
+                <li>Contributors & Writers</li>
+                <li>Write For Us</li>
+                <li> Contact Us</li>
+                <li>Privacy Policy</li>
+              </ul>
             </div>
 
             <div className={styles.text1}>
               <h3>More on MNTN</h3>
-              <p>The Team </p>
-              <p>Jobs </p>
-              <p>Press </p>
+              <ul>
+                <li>The Team</li>
+                <li>Jobs</li>
+                <li>Press</li>
+              </ul>
             </div>
-          </div>
-        </div>
+          </article>
+        </section>
       </footer>
     </>
   );
