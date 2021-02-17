@@ -74,25 +74,25 @@ export default function Home() {
           src="HG.png"
           className={styles.sky}
           alt=""
-          style={{ transform: `translateY(${offsetY * 1}px)` }}
+          style={{ transform: `translateY(${offsetY * 0}px)` }}
         />
         <img
           src="MG.png"
           className={styles.mountain}
           alt=""
-          style={{ transform: `translateY(${offsetY * 0.7}px)` }}
+          style={{ transform: `translateY(${offsetY * 0.1}px)` }}
         />
         <img
           src="VG.png"
           className={styles.person}
           alt=""
-          style={{ transform: `translateY(${offsetY * 0.2}px)` }}
+          style={{ transform: `translateY(${offsetY * 0.5}px)` }}
         />
         <img
           src="BG Content.png"
           className={styles.shade}
           alt=""
-          style={{ transform: `translateY(${offsetY * 0.2}px)` }}
+          
         />
       </div>
 

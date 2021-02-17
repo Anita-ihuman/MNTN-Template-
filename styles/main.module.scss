@@ -1,11 +1,14 @@
 .main {
   width: 100%;
 background-color: #0B1D26;
+top: -10px;
+position: absolute;;
 }
 .content_text {
   width: 100%;
   color: white;
   padding: 60px;
+ 
 }
 .main_content {
   width: 70%;
@@ -13,6 +16,7 @@ background-color: #0B1D26;
   text-align: center;
   margin:auto;
  padding-bottom:  100px;
+
 }
 .content_text p {
   width: 85%;
@@ -32,6 +36,7 @@ background-color: #0B1D26;
   text-align: center;
   justify-content: center;
   margin:  auto;
+  
 }
 .content_top {
   display: flex;
