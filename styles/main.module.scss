@@ -38,8 +38,8 @@ background-color: #0B1D26;
 .content_top {
   display: flex;
 }
-.content_top p {
-  margin: 0px 0px;
+.content_top h4 {
+  margin: 7px 0px;
   padding-left: 1rem;
   font-family: Gilroy;
   font-style: normal;
@@ -52,17 +52,18 @@ background-color: #0B1D26;
 .content_bottom {
   display: flex;
 }
-.content_bottom p {
+.content_bottom a {
   font-family: Gilroy;
   font-size: 0.7rem;
   color: #fbd784;
-  width: 70px;
+  
   margin: 0;
 }
 .content_bottom img {
   width: 7px;
   height: 20px;
-  margin-top: 6px;
+  margin-top: -2px;
+  margin-left: 20px;
   transform: rotate(-90deg);
   color: #fbd784;
 }

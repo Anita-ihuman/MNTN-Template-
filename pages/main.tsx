@@ -6,6 +6,7 @@ export interface ElementProps {
   headbold: string;
   headtext: string;
   headbottom: string;
+  left: boolean;
 }
 
 export function Element({
@@ -13,34 +14,42 @@ export function Element({
   headbold,
   headtext,
   headbottom,
+  left,
 }: ElementProps) {
   return (
-    <div className={styles.main}>
-      <div className={styles.main_content}>
-        <div className={styles.main_content1}>
+    <main className={styles.main}>
+      <section className={styles.main_content}>
+        <article className={styles.main_content1}>
+          {left && (
+            <figure className={styles.content_sideimg}>
+              <img src="01.png" alt="" width="400px" />
+            </figure>
+          )}
           <div className={styles.content_text}>
-            <div>
+            <figure>
               <img src="" className={styles.content_fade} />
-            </div>
+            </figure>
             <div className={styles.content_top}>
               <div className={styles.content_line}>
                 <img src="Rectangle 2.1.png" alt="" />
               </div>
-              <p className={styles.content_orange}>{headtop}</p>
+              <h4 className={styles.content_orange}>{headtop}</h4>
             </div>
-            <h3 className={styles.content_bold}>{headbold}</h3>
+            <h2 className={styles.content_bold}>{headbold}</h2>
             <p>{headtext}</p>
             <div className={styles.content_bottom}>
-              <p>{headbottom}</p>
+              <a href="/">{headbottom}</a>
               <img src="arrow_downward.png" />
             </div>
           </div>
-          <div className={styles.content_sideimg}>
-            <img src="01.png" alt="" width="400px" />
-          </div>
-        </div>
-      </div>
-    </div>
+          {!left && (
+            <figure className={styles.content_sideimg}>
+              <img src="01.png" alt="" width="400px" />
+            </figure>
+          )}
+        </article>
+      </section>
+    </main>
   );
 }
 
