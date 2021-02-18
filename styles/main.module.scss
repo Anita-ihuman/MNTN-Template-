@@ -1,8 +1,7 @@
 .main {
   width: 100%;
 background-color: #0B1D26;
-top: -10px;
-position: absolute;;
+
 }
 .content_text {
   width: 100%;
@@ -19,14 +18,15 @@ position: absolute;;
 
 }
 .content_text p {
-  width: 85%;
+ text-align: justify;
   color: white;
   text-align: start;
   font-family: Gilroy;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
-  line-height: 30px;
+  line-height: 25px;
+  padding: 0px 33px;
 }
 
 .main_content1 {
@@ -40,6 +40,7 @@ position: absolute;;
 }
 .content_top {
   display: flex;
+   padding:0px 33px;
 }
 .content_top h4 {
   margin: 7px 0px;
@@ -54,6 +55,7 @@ position: absolute;;
 }
 .content_bottom {
   display: flex;
+   padding: 35px;
 }
 .content_bottom a {
   font-family: Gilroy;
@@ -81,4 +83,5 @@ position: absolute;;
   flex-grow: 0;
   margin: 27px 0px;
   width: 460px;
+   padding: 0px 33px;
 }
