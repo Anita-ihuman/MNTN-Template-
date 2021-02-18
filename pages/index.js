@@ -4,13 +4,22 @@ import styles from "../styles/Home.module.css";
 import { Element } from "../pages/main";
 
 export default function Home() {
-   const [offsetY, setOffsetY] = useState(0);
-   const handleScroll = () => setOffsetY(window.pageYOffset);
-   useEffect(() => {
-     window.addEventListener("scroll", handleScroll);
-     return () => window.removeEventListener("scroll", handleScroll);
-   }, []);
+  const [offsetY, setOffsetY] = useState(0);
+  const HandleScroll = () => setOffsetY(window.pageYOffset);
+  //  useEffect(() => {
+  //    window.addEventListener("scroll", handleScroll);
+  //    return () => window.removeEventListener("scroll", handleScroll);
+  //  }, []);
+  useEffect(() => {
+    window.addEventListener("scroll", HandleScroll => {
+      let scroll = window.pageYOffset;
 
+      offsetY.map((offSet) => {
+        let speed = offSet.dataset.speed;
+        offSet.style.transform = `transform(${scroll * speed}px)`;
+      });
+    });
+  });
   return (
     <>
       <div className={styles.Header}>
@@ -88,12 +97,7 @@ export default function Home() {
           alt=""
           style={{ transform: `translateY(${offsetY * 0.5}px)` }}
         />
-        <img
-          src="BG Content.png"
-          className={styles.shade}
-          alt=""
-          
-        />
+        <img src="BG Content.png" className={styles.shade} alt="" />
       </div>
 
       <Element
