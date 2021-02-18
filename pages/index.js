@@ -14,9 +14,9 @@ export default function Home() {
     window.addEventListener("scroll", HandleScroll => {
       let scroll = window.pageYOffset;
 
-      offsetY.map((offSet) => {
-        let speed = offSet.dataset.speed;
-        offSet.style.transform = `transform(${scroll * speed}px)`;
+      HandleScroll.map((element) => {
+        let speed = element.dataset.speed;
+        element.style.transform = `translateY(${scroll * speed}px)`;
       });
     });
   });
@@ -77,25 +77,25 @@ export default function Home() {
           src="BG Hero.png"
           className={styles.topshade}
           alt=""
-          style={{ transform: `translateY(${offsetY * 0.2}px)` }}
+          style={{ transform: `translateY(${offsetY * -0.25}px)` }}
         />
         <img
           src="HG.png"
           className={styles.sky}
           alt=""
-          style={{ transform: `translateY(${offsetY * 0}px)` }}
+          style={{ transform: `translateY(${offsetY * 0.2}px)` }}
         />
         <img
           src="MG.png"
           className={styles.mountain}
           alt=""
-          style={{ transform: `translateY(${offsetY * 0.1}px)` }}
+          style={{ transform: `translateY(${offsetY * 0.3}px)` }}
         />
         <img
           src="VG.png"
           className={styles.person}
           alt=""
-          style={{ transform: `translateY(${offsetY * 0.5}px)` }}
+          style={{ transform: `translateY(${offsetY * 0.4}px)` }}
         />
         <img src="BG Content.png" className={styles.shade} alt="" />
       </div>
