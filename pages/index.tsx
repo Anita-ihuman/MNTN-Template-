@@ -60,6 +60,7 @@ export default function Home() {
               src="slider Indicator.png"
               className={styles.Header_rulerthick}
               alt=""
+              style={{ transform: `translateY(${offsetY * 0.3}px)` }}
             />
             <img src="slider BG.png" alt="" className={styles.Header_ruler} />
           </div>
