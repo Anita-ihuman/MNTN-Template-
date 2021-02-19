@@ -33,12 +33,18 @@
   margin: 0;
 }
 .link {
+  margin-top: 18px;
+}
+.link a {
   padding: 19px;
   font-weight: 500;
   font-size: 0.8rem;
   margin: 0;
   font-family: Roboto;
   color: white;
+  list-style: none;
+  text-decoration: none;
+
 }
 .btn {
   color: white;
@@ -60,7 +66,7 @@
 }
 .search {
   color: black;
-  width: 90%;
+  width: 65%;
   padding-right: 5px;
 }
 //  @media only screen and (max-width: 600px){
