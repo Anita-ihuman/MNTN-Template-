@@ -73,6 +73,9 @@
 .Header_text {
   margin: 0px 160px;
 }
+.Header_social2{
+  display: none;
+}
 .Header_social {
   font-size: 0.7rem;
   padding-top: 30px;
@@ -97,8 +100,10 @@
   color: #fbd784;
 }
 .Header_line {
-  margin-top: 10px;
-  padding-right: 20px;
+  margin-top: 9px;
+  padding-right: 50px;
+  width: 50px;
+
 }
 .Header_top_bold {
   text-transform: capitalize;
@@ -158,4 +163,90 @@
     width: 100%;
     flex-direction: column;
   }
+  .Header_title {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 50;
+  margin: 0;
+}
+.Header_text{
+  margin: 0;
+  padding: 0px;
+}
+.Header_top_bold{
+  width: 350px;
+  font-size: 2rem;
+}
+.Header_social2{
+  display: block;
+}
+.Header_social{
+  display: none;
+
+}.Header_measure{
+  padding: 0;
+}
+
+.Header_top {
+  flex-wrap: wrap;
+  font-size: 0.5rem;
+  padding: 0px;
+  margin: 0;
+}
+.Header_rulerthick {
+  position: absolute;
+  top: 271px;
+  right: 64px;
+  width: 2.1px;
+}
+
+/* //paralex effect */
+
+
+.sky {
+  position: absolute;
+  bottom: -100px;
+  width: 1300px;
+  right: 0px;
+  bottom:0px;
+  z-index: 30;
+}
+.topshade {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  right: 0px;
+  bottom: 450px;
+  z-index: 40;
+}
+.mountain {
+  position: absolute;
+  bottom: 0px;
+  width:100%;
+  right: 0px;
+  top: 323px;
+  bottom: -100px;
+  z-index: 30;
+
+}
+.person {
+  position: absolute;
+  bottom: 0px;
+  width:100%;
+  right: 0px;
+  top: 305px;
+  bottom: 0px;
+  z-index: 40;
+     object-fit: cover;
+  height: 600px;
+}
+.shade {
+  position: absolute;
+  width: 1400px;
+  right: 0;
+  top: 555px;
+  height: 350px;
+  z-index: 100;
+}
 }

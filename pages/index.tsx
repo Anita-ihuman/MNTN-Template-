@@ -47,6 +47,16 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className={styles.Header_social2}>
+            <p className={styles.Header_socialte}>Follow</p>
+            <div>
+              <img src="Vector (1).png" alt="" />
+            </div>
+
+            <div>
+              <img src="twitter.png" alt="" />
+            </div>
+          </div>
           <div className={styles.Header_measure}>
             <div>
               <p>Start</p>
