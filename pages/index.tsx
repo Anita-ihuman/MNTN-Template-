@@ -1,33 +1,22 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
-import { Element } from "../pages/main";
+import { Element } from "./main";
 
 export default function Home() {
   const [offsetY, setOffsetY] = useState(0);
   const HandleScroll = () => setOffsetY(window.pageYOffset);
-  //  useEffect(() => {
-  //    window.addEventListener("scroll", handleScroll);
-  //    return () => window.removeEventListener("scroll", handleScroll);
-  //  }, []);
-  useEffect(() => {
-    window.addEventListener("scroll", HandleScroll => {
-      let scroll = window.pageYOffset;
+   useEffect(() => {
+     window.addEventListener("scroll", (HandleScroll));
+     return () => { removeEventListener("scroll", HandleScroll) };
+   }, []);
 
-      HandleScroll.map((element) => {
-        let speed = element.dataset.speed;
-        element.style.transform = `translateY(${scroll * speed}px)`;
-      });
-    });
-  });
   return (
     <>
       <div className={styles.Header}>
         <div className={styles.Header_title}>
           <div className={styles.Header_social}>
-            <p className={styles.Header_socialte} href="/">
-              Follow
-            </p>
+            <p className={styles.Header_socialte}>Follow</p>
             <div>
               <img src="Vector (1).png" alt="" />
             </div>
@@ -36,7 +25,10 @@ export default function Home() {
               <img src="twitter.png" alt="" />
             </div>
           </div>
-          <div className={styles.Header_text}>
+          <div
+            className={styles.Header_text}
+            style={{ transform: `translateY(${offsetY * -2}px)` }}
+          >
             <div className={styles.Header_top}>
               <div className={styles.Header_line}>
                 <img src="Rectangle 2.1.png" alt="" />
@@ -83,7 +75,7 @@ export default function Home() {
           src="HG.png"
           className={styles.sky}
           alt=""
-          style={{ transform: `translateY(${offsetY * 0.2}px)` }}
+          style={{ transform: `translateY(${offsetY * 0.3}px)` }}
         />
         <img
           src="MG.png"
@@ -108,12 +100,13 @@ export default function Home() {
         image="01.png"
       />
       <Element
+        image="01.png"
         headtop="Hiking Essentials"
         headbold="Picking the right Hiking Gear!"
         headtext="The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have.
 Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet. "
         headbottom="read more"
-        left='""'
+        left
       />
       <Element
         headtop="where you go is the key"

@@ -9,7 +9,7 @@ export interface ElementProps {
   headbold: string;
   headtext: string;
   headbottom: string;
-  left: boolean;
+  left?: boolean;
   image: string;
 }
 
@@ -25,11 +25,10 @@ export function Element({
     Aos.init({ duration: 2000 });
   }, []);
 
-
   return (
     <main className={styles.main}>
       <section className={styles.main_content}>
-        <article data-aos="fade-left"className={styles.main_content1}>
+        <article data-aos="fade-right" className={styles.main_content1}>
           {left && (
             <figure className={styles.content_sideimg}>
               <img src="01 (1).png" alt="" width="400px" />

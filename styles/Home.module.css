@@ -2,7 +2,7 @@
   width: 100%;
   height: 100vh;
   position: relative;
-overflow: auto;
+  overflow:auto;
 }
 .header:after {
   content: "";
@@ -38,6 +38,7 @@ overflow: auto;
   top: 323px;
   bottom: -100px;
   z-index: 30;
+
 }
 .person {
   position: absolute;
@@ -54,8 +55,8 @@ overflow: auto;
   position: absolute;
   width: 1400px;
   right: 0;
-  top: 755px;
-  height: 650px;
+  top: 855px;
+  height: 350px;
   z-index: 100;
 }
 .Header_title {
@@ -70,37 +71,35 @@ overflow: auto;
   color: white;
   justify-content: space-around;
 }
-.Header_text{
+.Header_text {
   margin: 0px 160px;
 }
 .Header_social {
-font-size: 0.7rem;
-padding-top: 30px;
-
+  font-size: 0.7rem;
+  padding-top: 30px;
 }
-.Header_socialte{
-    transform: rotate(90deg);
-   
+.Header_socialte {
+  transform: rotate(90deg);
 }
-.Header_social img{
+.Header_social img {
   width: 15px;
 }
 .Header_top {
   display: flex;
   font-size: 0.9rem;
 }
-.Header_top p{
+.Header_top p {
   font-family: Gilroy;
-font-style: normal;
-font-weight: 800;
-font-size: 0.8rem;
-letter-spacing: 6px;
-text-transform: uppercase;
-color: #FBD784;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.8rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #fbd784;
 }
-.Header_line{
-  margin-top:10px;
-padding-right:20px ;
+.Header_line {
+  margin-top: 10px;
+  padding-right: 20px;
 }
 .Header_top_bold {
   text-transform: capitalize;
@@ -115,48 +114,45 @@ padding-right:20px ;
   flex-grow: 0;
   margin: 0px 0px;
 }
-.Header_bottom{
+.Header_bottom {
   display: flex;
 }
-.Header_span{
+.Header_span {
   font-size: 0.7rem;
   margin: 0px;
-
 }
-.Header_bottom img{
+.Header_bottom img {
   width: -10px;
   height: 20px;
   padding-left: 10px;
-
 }
-.Header_measure{
-padding-top: 30px;
-display: flex;
+.Header_measure {
+  padding-top: 30px;
+  display: flex;
 }
-.Header_measure p{
+.Header_measure p {
   margin: 0;
-   height: 34px;
+  height: 34px;
 }
-.Header_meter{
+.Header_meter {
   padding-right: 20px;
   list-style: none;
-   font-size: 0.7rem;
-   margin: 0;  
-  
+  font-size: 0.7rem;
+  margin: 0;
 }
-.Header_meter li{
-   height: 40px;
+.Header_meter li {
+  height: 40px;
 }
-.Header_ruler{
-    width: 2px;
-    margin-top: 0px; 
-       height: 166px;
+.Header_ruler {
+  width: 2px;
+  margin-top: 0px;
+  height: 166px;
 }
-.Header_rulerthick{
+.Header_rulerthick {
   position: absolute;
   top: 31px;
   right: 42px;
-      width: 2.1px;
+  width: 2.1px;
 }
 @media (max-width: 600px) {
   .grid {
