@@ -1,7 +1,9 @@
 .main {
   width: 100%;
 background-color: #0B1D26;
-
+ overflow: auto;
+ top: 200px;
+ position: relative;
 }
 .content_text {
   width: 100%;
