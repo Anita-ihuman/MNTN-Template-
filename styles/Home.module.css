@@ -16,7 +16,7 @@
 .sky {
   position: absolute;
   bottom: -100px;
-  width: 1300px;
+  width: 100%;
   right: 0px;
   bottom: -60px;
   z-index: 30;
@@ -24,7 +24,7 @@
 .topshade {
   position: absolute;
   bottom: 0px;
-  width: 1400px;
+  width: 100%;
   right: 0px;
   bottom: -100px;
   z-index: 40;
@@ -32,7 +32,7 @@
 .mountain {
   position: absolute;
   bottom: 0px;
-  width: 1300px;
+  width: 100%;
   right: 0px;
   top: 323px;
   bottom: -100px;
@@ -42,7 +42,7 @@
 .person {
   position: absolute;
   bottom: 0px;
-  width: 1300px;
+  width: 100%;
   right: 0;
   top: 545px;
   bottom: 0px;
@@ -52,7 +52,7 @@
 }
 .shade {
   position: absolute;
-  width: 1400px;
+  width: 100%;
   right: 0;
   top: 855px;
   height: 350px;
@@ -126,8 +126,8 @@
   margin: 0px;
 }
 .Header_bottom img {
-  width: -10px;
-  height: 20px;
+  width: 30%;
+  height: 15px;
   padding-left: 10px;
 }
 .Header_measure {
@@ -207,7 +207,7 @@
 .sky {
   position: absolute;
   bottom: 0px;
-  width: 1300px;
+  width: 100%;
   right: 0px;
   top: 0px;
   z-index: 30;
@@ -225,7 +225,7 @@
   bottom: 0px;
   width:100%;
   right: 0px;
-  top:453px;
+  top:103px;
   bottom: -100px;
   z-index: 30;
 
@@ -235,7 +235,7 @@
   bottom: 0px;
   width:100%;
   right: 0px;
-  top: 355px;
+  top: 65px;
   bottom: 0px;
   z-index: 40;
      object-fit: cover;
@@ -243,9 +243,9 @@
 }
 .shade {
   position: absolute;
-  width: 1400px;
+  width: 100%;
   right: 0;
-  top: 745px;
+  top: 405px;
   height: 350px;
   z-index: 100;
 }
