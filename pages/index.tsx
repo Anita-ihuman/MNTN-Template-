@@ -6,10 +6,12 @@ import { Element } from "./main";
 export default function Home() {
   const [offsetY, setOffsetY] = useState(0);
   const HandleScroll = () => setOffsetY(window.pageYOffset);
-   useEffect(() => {
-     window.addEventListener("scroll", (HandleScroll));
-     return () => { removeEventListener("scroll", HandleScroll) };
-   }, []);
+  useEffect(() => {
+    window.addEventListener("scroll", HandleScroll);
+    return () => {
+      removeEventListener("scroll", HandleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -109,6 +111,7 @@ export default function Home() {
         headtext="Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? "
         headbottom="read more"
         image="01.png"
+        imagefade="Equipment.png"
       />
       <Element
         image="01.png"
@@ -118,6 +121,7 @@ export default function Home() {
 Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet. "
         headbottom="read more"
         left
+        imagefade="Equipment (1).png"
       />
       <Element
         headtop="where you go is the key"
@@ -125,6 +129,7 @@ Let’s start with clothing. A typical mistake hiking beginners make is wearing 
         headtext="To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the junction.."
         headbottom="read more"
         image="copy.png"
+        imagefade="Equipment (2).png"
       />
     </>
   );

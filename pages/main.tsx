@@ -11,6 +11,7 @@ export interface ElementProps {
   headbottom: string;
   left?: boolean;
   image: string;
+  imagefade: string;
 }
 
 export function Element({
@@ -20,6 +21,7 @@ export function Element({
   headbottom,
   left,
   image,
+  imagefade,
 }: ElementProps) {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -36,7 +38,7 @@ export function Element({
           )}
           <div className={styles.content_text}>
             <figure>
-              <img src="" className={styles.content_fade} />
+              <img src={imagefade} className={styles.content_fade} />
             </figure>
             <div className={styles.content_top}>
               <div className={styles.content_line}>
