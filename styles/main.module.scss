@@ -96,11 +96,12 @@ z-index: 100;
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
+   
   }
   .content_bold {
     margin: 27px 0px;
   width: 200px;
-    
+      padding: 0;
   font-size: 1.5rem;
   }
   .content_line{
@@ -118,7 +119,24 @@ z-index: 100;
     padding-left: 0px;
     
   }
+  .content_bottom{
+      padding: 0;
+  }
   .content_sideimg{
       object-fit: cover;
   }
+  .content_text p {
+    padding: 0;
+    text-align: start;
+  }
+  .content_top{
+      padding: 0;
+  }
+  .main {
+  width: 100%;
+background-color: #0B1D26;
+ overflow: hidden;
+
+ position: relative;
+}
 }

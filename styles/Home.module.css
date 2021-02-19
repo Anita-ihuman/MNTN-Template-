@@ -206,10 +206,10 @@
 
 .sky {
   position: absolute;
-  bottom: -100px;
+  bottom: 0px;
   width: 1300px;
   right: 0px;
-  bottom:0px;
+  top: 0px;
   z-index: 30;
 }
 .topshade {
@@ -225,7 +225,7 @@
   bottom: 0px;
   width:100%;
   right: 0px;
-  top: 353px;
+  top:453px;
   bottom: -100px;
   z-index: 30;
 
@@ -235,7 +235,7 @@
   bottom: 0px;
   width:100%;
   right: 0px;
-  top: 305px;
+  top: 355px;
   bottom: 0px;
   z-index: 40;
      object-fit: cover;
@@ -245,7 +245,7 @@
   position: absolute;
   width: 1400px;
   right: 0;
-  top: 605px;
+  top: 745px;
   height: 350px;
   z-index: 100;
 }
