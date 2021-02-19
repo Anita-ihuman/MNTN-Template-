@@ -3,7 +3,7 @@
    background-color: #0b1d26;
    z-index: 40px;
    position: relative;
-   top: 200px;
+   top: 350px;
 }
 
 .Third {
@@ -52,7 +52,7 @@ margin: 0 auto;
   line-height: 22px;
 }
 .text {
-  margin-right: 150px;
+  margin-right: 170px;
 }
 .textimg {
   width: 70px;
@@ -92,8 +92,16 @@ margin: 0 auto;
     flex-direction: row;
     justify-content: center;
   }
+  .text{
+    margin: 0;
+
+  }
   .text2 {
     flex-wrap: wrap;
     flex-direction: row;
+    margin: 0;
+  }
+  .text1{
+    margin-left: 50px;
   }
 }
