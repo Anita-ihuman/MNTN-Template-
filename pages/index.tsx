@@ -27,7 +27,7 @@ export default function Home() {
           </div>
           <div
             className={styles.Header_text}
-            style={{ transform: `translateY(${offsetY * -0.8}px)` }}
+            style={{ transform: `translateY(${offsetY * -0.6}px)` }}
           >
             <div className={styles.Header_top}>
               <div className={styles.Header_line}>
@@ -87,19 +87,19 @@ export default function Home() {
           src="MG.png"
           className={styles.mountain}
           alt=""
-          style={{ transform: `translateY(${offsetY * 0.2}px)` }}
+          style={{ transform: `translateY(${offsetY * 0.3}px)` }}
         />
         <img
           src="VG.png"
           className={styles.person}
           alt=""
-          style={{ transform: `translateY(${offsetY * 0.3}px)` }}
+          style={{ transform: `translateY(${offsetY * 0.4}px)` }}
         />
         <img
           src="BG Content.png"
           className={styles.shade}
           alt=""
-          style={{ transform: `translateY(${offsetY * 0.35}px)` }}
+          style={{ transform: `translateY(${offsetY * 0.4}px)` }}
         />
       </div>
 
