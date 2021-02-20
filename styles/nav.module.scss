@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   margin: 0px 0px;
-  font-family: Roboto;
+  font-family: 'Khula', sans-serif;
   padding: 0px 0px;
   justify-content: space-between;
   align-items: center;
@@ -13,7 +13,7 @@
   z-index: 50;
 }
 .header {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), transparent);
+
   display: flex;
   width: 95%;
   padding-top: 20px;
@@ -40,7 +40,7 @@
   font-weight: 500;
   font-size: 0.8rem;
   margin: 0;
-  font-family: Roboto;
+ font-family: 'Khula', sans-serif;
   color: white;
   list-style: none;
   text-decoration: none;
@@ -59,6 +59,7 @@
 .side {
   display: flex;
   padding: 20px;
+  font-family: 'Khula', sans-serif;
 }
 .side a {
   font-weight: 500;

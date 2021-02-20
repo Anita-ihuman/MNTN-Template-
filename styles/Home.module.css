@@ -15,10 +15,10 @@
 }
 .sky {
   position: absolute;
-  bottom: -100px;
+  top: 0px;
   width: 100%;
   right: 0px;
-  bottom: -60px;
+  bottom: 0px;
   z-index: 30;
 }
 .topshade {
@@ -71,7 +71,7 @@
   justify-content: space-around;
 }
 .Header_text {
-  margin: 0px 160px;
+  margin: 0px 140px;
 }
 .Header_social2{
   display: none;
@@ -91,7 +91,7 @@
   font-size: 0.9rem;
 }
 .Header_top p {
-  font-family: Gilroy;
+  font-family: 'Khula', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 0.8rem;
@@ -101,13 +101,16 @@
 }
 .Header_line {
   margin-top: 9px;
-  padding-right: 50px;
+  padding-right: 25px;
   width: 50px;
 
 }
+.Header_line img{
+  width: 100%;
+}
 .Header_top_bold {
   text-transform: capitalize;
-  font-family: Chronicle Display;
+ font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: 600;
   font-size: 3.4rem;
@@ -131,12 +134,15 @@
   padding-left: 10px;
 }
 .Header_measure {
+  font-family: 'Khula', sans-serif;
   padding-top: 30px;
   display: flex;
+  padding-right: 20px;
 }
 .Header_measure p {
   margin: 0;
   height: 34px;
+  font-family: 'Khula', sans-serif;
 }
 .Header_meter {
   padding-right: 20px;
@@ -154,8 +160,8 @@
 }
 .Header_rulerthick {
   position: absolute;
-  top: 31px;
-  right: 43px;
+  top:30px;
+  right: 66px;
   width: 2.1px;
 }
 @media (max-width: 600px) {
