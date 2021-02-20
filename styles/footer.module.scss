@@ -28,14 +28,14 @@ margin: 0 auto;
   font-family: Gilroy;
 }
 .text p {
-  font-family: Gilroy;
+  font-family: 'Khula', sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 22px;
   width: 170px;
 }
 .text ul {
-  font-family: Gilroy;
+    font-family: 'Khula', sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 22px;
@@ -45,7 +45,7 @@ margin: 0 auto;
 .text1 ul {
   padding: 0;
   list-style: none;
-  font-family: Gilroy;
+    font-family: 'Khula', sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 22px;
@@ -63,12 +63,17 @@ margin: 0 auto;
   font-size: 14px;
   font-family: Gilroy;
   color: #fbd784;
+
 }
 .text1 h3 {
   font-weight: bold;
   font-size: 14px;
   font-family: Gilroy;
   color: #fbd784;
+   
+}
+.text1 li{
+   padding: 7px 0px;
 }
 .first {
   display: flex;
