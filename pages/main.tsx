@@ -26,8 +26,21 @@ export function Element({
  useEffect(() => {
    Aos.init({ duration: 2000 });
  }, []);
+  
+    const [offsetY, setOffsetY] = useState(0);
+    const HandleScroll = () => setOffsetY(window.pageYOffset);
+    useEffect(() => {
+      window.addEventListener("scroll", HandleScroll);
+      return () => {
+        removeEventListener("scroll", HandleScroll);
+      };
+    }, []);
+
   return (
-    <main className={styles.main}>
+    <main
+      className={styles.main}
+      style={{ transform: `translateY(${offsetY * -0.6}px)` }}
+    >
       <section className={styles.main_content}>
         <article data-aos="fade-right" className={styles.main_content1}>
           {left && (

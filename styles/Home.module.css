@@ -228,6 +228,7 @@
   position: absolute;
   bottom: 0px;
   width: 100%;
+  top: 0px;
   right: 0px;
   bottom: 450px;
   z-index: 40;
@@ -247,18 +248,22 @@
   bottom: 0px;
   width:100%;
   right: 0px;
-  top: 65px;
+  top:45px;
   bottom: 0px;
   z-index: 40;
      object-fit: cover;
   height: 600px;
+  bottom: 0;
+  overflow: hidden;
 }
 .shade {
   position: absolute;
   width: 100%;
   right: 0;
-  top: 405px;
+  top: 435px;
   height: 350px;
   z-index: 100;
+  bottom: 0;
+   overflow: hidden;
 }
 }

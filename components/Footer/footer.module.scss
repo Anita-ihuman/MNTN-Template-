@@ -52,6 +52,7 @@ margin: 0 auto;
   color: white;
 
 }
+
 .list{
   list-style: none;
   color: white;
@@ -113,6 +114,23 @@ margin: 0 auto;
     margin: 0;
   }
   .text1{
-    margin-left: 50px;
+    margin-left: 20px;
   }
+  .text1 h3 {
+  font-weight: bold;
+  font-size: 0.7rem;
+  font-family: Gilroy;
+  color: #fbd784;
+   
+}
+.text p{
+   font-size:0.5rem ;
+}
+.text1 li{
+  font-size:0.5rem ;
+   padding: 5px 0px;
+}
+.copy{
+  text-align: left;
+}
 }
