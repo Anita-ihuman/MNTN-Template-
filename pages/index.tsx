@@ -69,12 +69,12 @@ export default function Home() {
               </ul>
             </div>
             <img
-              src="slider Indicator.png"
+              src="Slider Indicator.png"
               className={styles.Header_rulerthick}
               alt=""
               style={{ transform: `translateY(${offsetY * 0.3}px)` }}
             />
-            <img src="slider BG.png" alt="" className={styles.Header_ruler} />
+            <img src="Slider BG.png" alt="" className={styles.Header_ruler} />
           </div>
         </div>
 

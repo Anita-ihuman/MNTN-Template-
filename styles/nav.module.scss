@@ -58,7 +58,7 @@
 }
 .side {
   display: flex;
-  padding: 20px;
+ margin: 20px;
   font-family: 'Khula', sans-serif;
 }
 .side a {
@@ -70,6 +70,32 @@
   width: 65%;
   padding-right: 5px;
 }
-//  @media only screen and (max-width: 600px){
+ @media only screen and (max-width: 600px){
+.nav{
+   display: flex;
+  width: 100%;
+}
+.header {
 
-//  }
+  display: flex;
+  width: 95%;
+  padding-top: 20px;
+  justify-content: space-evenly;
+}
+.side{
+ margin: 20px 0px 0px 0px;
+ padding: 0;
+}
+.menu{
+  padding: 0;
+}
+.link a {
+  padding: 5px;
+  font-size: 0.5rem;
+
+}
+.brand {
+  margin: 20px 6px 6px 6px;
+  cursor: pointer;
+}
+ }
