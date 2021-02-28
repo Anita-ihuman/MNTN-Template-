@@ -65,7 +65,7 @@
   line-height: 4rem;
   top: 180px;
   justify-content: center;
-  width: 100%;
+ 
   text-align: center;
   color: white;
   justify-content: space-around;
@@ -175,6 +175,7 @@
   flex-wrap: wrap;
   z-index: 50;
   margin: 0;
+ 
 }
 .Header_text{
   margin: 0;
@@ -231,7 +232,7 @@
   bottom: 0px;
   width:100%;
   right: 0px;
-  top:103px;
+  top:120px;
   bottom: -100px;
   z-index: 30;
 
