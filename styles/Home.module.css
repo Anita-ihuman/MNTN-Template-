@@ -210,7 +210,12 @@
 
 /* //paralex effect */
 
+.Header_rulerthick {
 
+  top:280px;
+  right: 62px;
+
+}
 .sky {
   position: absolute;
   bottom: 0px;

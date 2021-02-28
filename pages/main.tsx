@@ -23,10 +23,6 @@ export function Element({
   image,
   imagefade,
 }: ElementProps) {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
-
   return (
     <main className={styles.main}>
       <section className={styles.main_content}>
