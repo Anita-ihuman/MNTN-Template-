@@ -130,6 +130,7 @@ Let’s start with clothing. A typical mistake hiking beginners make is wearing 
         headbottom="read more"
         image="copy.png"
         imagefade="Equipment (2).png"
+        
       />
     </>
   );
