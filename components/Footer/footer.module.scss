@@ -44,11 +44,18 @@ margin: 0 auto;
 }
 .text1 ul {
   padding: 0;
-  list-style: none;
     font-family: 'Khula', sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 22px;
+   list-style: none;
+  color: white;
+
+}
+.list{
+  list-style: none;
+  color: white;
+ text-decoration:none;
 }
 .text {
   margin-right: 170px;
