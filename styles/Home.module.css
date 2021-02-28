@@ -64,14 +64,14 @@
   z-index: 50;
   line-height: 4rem;
   top: 180px;
-  justify-content: center;
- 
   text-align: center;
+  align-items: center;
+  margin: 0px  50px;
   color: white;
   justify-content: space-around;
 }
 .Header_text {
-  margin: 0px 140px;
+  margin: 0px 220px;
 }
 .Header_social2{
   display: none;
@@ -79,6 +79,7 @@
 .Header_social {
   font-size: 0.7rem;
   padding-top: 30px;
+ 
 }
 .Header_socialte {
   transform: rotate(90deg);
@@ -120,6 +121,7 @@
   text-align: left;
   flex-grow: 0;
   margin: 0px 0px;
+ 
 }
 .Header_bottom {
   display: flex;
@@ -160,8 +162,8 @@
 }
 .Header_rulerthick {
   position: absolute;
-  top:30px;
-  right: 66px;
+  top:60px;
+  right: 20px;
   width: 2.1px;
 }
 @media (max-width: 600px) {
@@ -175,6 +177,7 @@
   flex-wrap: wrap;
   z-index: 50;
   margin: 0;
+
  
 }
 .Header_text{
@@ -210,7 +213,12 @@
 
 /* //paralex effect */
 
+.Header_rulerthick {
 
+  top:280px;
+  right: 62px;
+
+}
 .sky {
   position: absolute;
   bottom: 0px;
