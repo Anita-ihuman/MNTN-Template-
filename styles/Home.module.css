@@ -177,7 +177,6 @@
   flex-wrap: wrap;
   z-index: 50;
   margin: 0;
-
  
 }
 .Header_text{
@@ -214,10 +213,8 @@
 /* //paralex effect */
 
 .Header_rulerthick {
-
   top:280px;
   right: 62px;
-
 }
 .sky {
   position: absolute;
