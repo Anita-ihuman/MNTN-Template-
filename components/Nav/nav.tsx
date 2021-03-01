@@ -10,7 +10,6 @@ const Navbar = () => {
             <img src="/Logo.png" alt="Logo" color="black" />
           </figure>
 
-          
           <div>
             <ul className={styles.menu}>
               <li className={styles.link}>
